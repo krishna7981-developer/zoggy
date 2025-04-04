@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Swaraj south spices</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+    <body>
+        <div id="preloader">
+            <img src="https://i.pinimg.com/originals/c3/42/01/c34201153d2aa51fa57ee2f7c11b4c3d.gif" alt="Loading...">
+        </div>
+        <div id="content">
+        <header>
+            <h1>Swaraj South's Spieces</h1>
+            <p class="quote">"Experience the taste of India!"</p>
+            <div id="cart">
+                <h2>Cart 🛒</h2>
+                <p>Total: ₹<span id="total">0</span></p>
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" id="order-button">Order Now </button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Thank you! visit again </h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>Your 🍲 order has been places successfully ✅</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </header>
+        <h2> sawaraj south spieces</h2></a>
+                <ul>
+                    <li><img src="https://t3.ftcdn.net/jpg/03/97/46/76/360_F_397467670_DTHnw0TxcKRn9q7HnS2s9R18X6j6gTZk.jpg"><button onclick="addToCart('Swaraj South Spices', 'Vada Sambar', 40)"class="add-to-cart" data-price="40">Vada Sambar - ₹40</button></li>
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3CSSIjvfZXgL_MILx2_58hR1e7VtypQPFOA&s"><button onclick="addToCart('Swaraj Spices', 'Masala Dosa', 60)"class="add-to-cart" data-price="60">Masala Dosa - ₹60</button></li>
+                    <li><img src="https://t3.ftcdn.net/jpg/01/86/33/72/360_F_186337209_9rbcMLu3wGCDNaEoK1jO0aNzb0pv7Xs7.jpg"><button onclick="addToCart('Swaraj South Spices', 'Plane Dosa', 50)"class="add-to-cart" data-price="50">Plane Dosa - ₹50</button></li>
+                    <li><img src="https://t3.ftcdn.net/jpg/06/50/60/46/360_F_650604677_lQDktDtlSu3jQTlctUpKPTcKahdrw0am.jpg"><button onclick="addToCart('Swaraj South Spices', 'south Indian Thali', 350)"class="add-to-cart" data-price="350">south Indian Thali - ₹350</button></li>
+                </ul>
+                
+                <footer>
+                    <h2>Contact Us</h2>
+                    <p>Email: @Swaraj'ssouthindian.com</p>
+                    <p>Phone: +91 9552661244</p>
+                    <a href="https://www.google.com/maps/place/Bidkin,+Maharashtra+431105/@19.7058721,75.2996423,63m/data=!3m1!1e3!4m6!3m5!1s0x3bdb75738e1aa431:0x2b1766e1c609a5a9!8m2!3d19.7029812!4d75.3029941!16s%2Fm%2F0h94yfl?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D">Our Location</a>
+                </footer>
+    </body>
+    <style>
+        img{
+            width:40%;
+            border-radius: 12px;
+            border:#000;
+        }
+        /*order button*/
+        button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+    .modal-body{
+        color: black;
+    }
+    .modal-title{
+        color:black;
+    }
+#cart {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+        body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+button {
+    background-color: #068020;
+    width: 280px;
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(230, 203, 173, 0.122);
+    padding: 10px;
+    font-size: 20px; /* Green accent for checkout button */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.menu {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #1f1f1f;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-style: italic;
+    color: #9e9e9e;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section h2 {
+    font-size: 2em;
+    color: #ff9800;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff9800;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    background-color: #424242;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.menu-item img {
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    border-radius: 8px;
+    border: 2px solid #ff9800;
+    transition: border 0.2s;
+}
+
+.menu-item img:hover {
+    border: 2px solid #ff5722;
+}
+
+.item-details h3 {
+    font-size: 1.5em;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.item-details .price {
+    font-size: 1.2em;
+    color: #ff9800;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1.2em;
+    color: #9e9e9e;
+}
+
+/*preloader*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* You can change this to any color or use an image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    display: none;
+}
+
+#preloader img {
+    max-width: 100px; /* Adjust size as needed */
+}
+    </style>
+    <script>
+      let total = 0;
+    const totalElement = document.getElementById('total');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const price = parseInt(button.getAttribute('data-price'));
+            total += price;
+            totalElement.textContent = total;
+        });
+    });
+
+    const orderButton = document.getElementById('order-button');
+    orderButton.addEventListener('click', function() {
+        alert('Your order has been placed! Total Amount: ₹' + total);
+        // Reset cart after order
+        total = 0;
+        totalElement.textContent = total;
+    });
+
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.getElementById('preloader').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+        document.body.style.overflow = 'auto';
+    }, 3000); // 2 seconds delay
+});
+;
+    </script>
+</html>

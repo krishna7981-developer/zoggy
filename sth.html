@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sai Trupti</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+    <body>
+        <div id="preloader">
+            <img src="https://i.pinimg.com/originals/c3/42/01/c34201153d2aa51fa57ee2f7c11b4c3d.gif" alt="Loading...">
+        </div>
+        <div id="content">
+    
+        <div class="container">
+        <header>
+            <h1>Hotel Sai Trupti</h1>
+            <p class="quote">"Experience the taste of India!"</p>
+            <div id="cart">
+                <h2>Cart 🛒</h2>
+                <p>Total: ₹<span id="total">0</span></p>
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" id="order-button">Order Now </button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Thank you! visit again </h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>Your 🍲 order has been places successfully ✅</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </header>
+        <h2>Saitrupti family garden restaurent </h2>
+                <ul>
+                  <li><img src="https://t4.ftcdn.net/jpg/01/44/47/11/360_F_144471106_pL9TzHPAM9Pfb0Wi1PAAVBHeO0uzMp61.jpg">
+                    <button onclick="addToCart('Saitrupti', 'paneer masala', 150)" class="add-to-cart" data-price="150">Paneer masala - ₹150</button></li>
+                    <li><img src="https://st2.depositphotos.com/5653638/11415/i/450/depositphotos_114152284-stock-photo-paneer-tikka-kabab-tandoori-indian.jpg"><button onclick="addToCart('Saitrupti', 'Paneer Tikka', 180)" class="add-to-cart" data-price="180">Paneer Tikka - ₹180</button></li>
+                    <li><img src="https://img.freepik.com/premium-photo/dhaba-style-sev-bhaji-sabzi-curry-made-tomato-curry-with-gathiya-ganthia-shev-served-bowl-karahi-selective-focus_466689-37770.jpg"><button onclick="addToCart('Saitrupti', 'Sew bhaji', 110)" class="add-to-cart" data-price="110">Sew Bhaji - ₹110</button></li>
+                    <li><img src="https://www.shutterstock.com/image-photo/drumstick-curry-shevga-sheng-bhaji-260nw-1227974683.jpg"><button onclick="addToCart('Saitrupti', 'Shevga masala', 150)" class="add-to-cart" data-price="150">Shevga Masala - ₹150</button></li>
+                    <li><img src="https://www.shutterstock.com/image-photo/tasty-dum-aloo-whole-potatoes-260nw-1923525176.jpg"><button onclick="addToCart('Saitrupti', 'Dam Aloo', 150)" class="add-to-cart" data-price="150">Dam Aloo - ₹150</button></li>
+                    <li><img src="https://images.picxy.com/cache/2020/7/11/5d0e63de6ed452da8c780587ed4f75ae.jpg"><button onclick="addToCart('Saitrupti', 'Doodh Sew bhaji', 130)" class="add-to-cart" data-price="130">Doodh Sew Bhaji - ₹130</button></li>
+                    <li><img src="https://img.freepik.com/premium-photo/malai-kofta-curry-is-mughlai-special-recipe-served-bowl-selective-focus_466689-33320.jpg"><button onclick="addToCart('Saitrupti', 'Malai Kofta', 170)" class="add-to-cart" data-price="170">Malai Kofta - ₹170</button></li>
+                    <li><img src="https://c8.alamy.com/comp/EWTTYF/tandoori-naan-EWTTYF.jpg"><button onclick="addToCart('Saitrupti', 'Tandori Roti', 12)" class="add-to-cart" data-price="12">Tandoori Roti - ₹12</button></li>
+                    <li><img src="https://t4.ftcdn.net/jpg/08/24/35/71/360_F_824357141_kpmWeDex1LAa4cC4TwdIpzuaEqeNAAC1.jpg"><button onclick="addToCart('Saitrupti', 'Tandoori Naan', 30)" class="add-to-cart" data-price="30">Tandoori Naan- ₹30</button></li>
+                    <li><img src="https://t4.ftcdn.net/jpg/13/15/09/81/360_F_1315098180_12QTR2xJDG9faXUk1NNihvPwF7ty4gkP.jpg"><button onclick="addToCart('Saitrupti', 'Butter Tandoori Roti ', 16)" class="add-to-cart" data-price="16">Butter Tandoori Roti - ₹16</button></li>
+                    <li><img src="https://static.vecteezy.com/system/resources/previews/039/002/677/non_2x/ai-generated-indian-naan-bread-with-garlic-butter-on-wooden-table-photo.jpg"><button onclick="addToCart('Saitrupti', 'Butter Tandoor  Naan', 40)" class="add-to-cart" data-price="40">Butter Tandoori Naan - ₹40</button></li>
+                    <li><img src="https://media.istockphoto.com/id/925340982/photo/cooked-plain-white-basmati-rice-in-terracotta-bowl-over-plain-or-wooden-background.jpg?s=612x612&w=0&k=20&c=GiT3GVbjjvB6SDUbzMans0DypsMvsNersfH0foA-saw="><button onclick="addToCart('Saitrupti', 'plane Rice', 110)" class="add-to-cart" data-price="110">plain Rice full - ₹110</button></li>
+                    <li><img src="https://priyafoods.com/cdn/shop/files/JEERARICE_2.jpg?v=1701948113"><button onclick="addToCart('Saitrupti', 'Jeera Rice full', 130)" class="add-to-cart" data-price="130">Jeera Rice full - ₹130</button></li>
+                    <li><img src="https://b.zmtcdn.com/data/dish_photos/dee/00dfbb2b4c14dc8a5ef86c1b71efcdee.jpeg"><button onclick="addToCart('Saitrupti', 'Dal Khichadi Full', 150)" class="add-to-cart" data-price="150">Dal Khichadi Full - ₹150</button></li>
+                </ul>
+
+                </div>
+                <footer>
+                    <h2>Contact Us</h2>
+                    <p>Email: contact@hotelsaitruptiHST.com</p>
+                    <p>Phone: +91 9936000032</p>
+                    <a href="https://www.google.com/maps/place/Hotel+Sai+Trupti+Family+Veg+Restaurant/@19.7374447,75.2917045,897m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bdb9f90bf7fd235:0x849903892494baf3!8m2!3d19.7374397!4d75.2942794!16s%2Fg%2F11sx562f50?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D">Our Location</a>
+                </footer>
+    </body>
+    <style>
+        img{
+            width:40%;
+            border-radius: 12px;
+            border:#000;
+        }
+        /*order button*/
+        button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+    .modal-body{
+        color: black;
+    }
+    .modal-title{
+        color:black;
+    }
+#cart {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+        body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+button {
+    background-color:#ff9800 ;
+    width: 280px;
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(230, 203, 173, 0.122);
+    padding: 10px;
+    font-size: 20px; /* Green accent for checkout button */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.menu {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #1f1f1f;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-style: italic;
+    color: #9e9e9e;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section h2 {
+    font-size: 2em;
+    color: #ff9800;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff9800;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    background-color: #424242;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.menu-item img {
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    border-radius: 8px;
+    border: 2px solid #ff9800;
+    transition: border 0.2s;
+}
+
+.menu-item img:hover {
+    border: 2px solid #ff5722;
+}
+
+.item-details h3 {
+    font-size: 1.5em;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.item-details .price {
+    font-size: 1.2em;
+    color: #ff9800;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1.2em;
+    color: #9e9e9e;
+}
+/*preloader*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* You can change this to any color or use an image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    display: none;
+}
+
+#preloader img {
+    max-width: 100px; /* Adjust size as needed */
+}
+
+    </style>
+    <script>
+
+    let total = 0;
+    const totalElement = document.getElementById('total');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const price = parseInt(button.getAttribute('data-price'));
+            total += price;
+            totalElement.textContent = total;
+        });
+    });
+
+    const orderButton = document.getElementById('order-button');
+    orderButton.addEventListener('click', function() {
+        alert('Your order has been placed! Total Amount: ₹' + total);
+        // Reset cart after order
+        total = 0;
+        totalElement.textContent = total;
+    });
+
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.getElementById('preloader').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+        document.body.style.overflow = 'auto';
+    }, 3000); // 2 seconds delay
+});
+;
+
+    </script>
+    </html>
